@@ -1,5 +1,5 @@
 {
-  "name": "client-server",
+  "name": "client",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -13,8 +13,10 @@
     "websocket": "^1.0.28"
   },
   "scripts": {
-    "start-client": "cd client ",
-    "start":"cd server"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
   },
   "eslintConfig": {
     "extends": "react-app"
