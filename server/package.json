@@ -2,11 +2,11 @@
   "name": "server",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
 	"client:build": "cd client && npm run build",
-	"start": "node index.js"
+	"start": "node server.js"
   },
   "author": "Reecha Khanal",
   "license": "ISC",
