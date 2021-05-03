@@ -2,7 +2,6 @@
   "name": "nodereact",
   "version": "1.0.0",
   "description": "",
-  "private": true,
   "main": "server.js",
   "engines": {
     "npm": "7.0.8",
@@ -13,7 +12,8 @@
     "start": "node server.js",
     "start:dev": "cd client && react-scripts start",
     "heroku-postbuild": "cd client && npm start",
-    "client": "cd client && npm start"
+    "client": "cd client && npm start",
+    "proxy": "ws://127.0.0.1:8000"
   },
   "author": "Reecha Khanal",
   "license": "ISC",
