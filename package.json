@@ -10,7 +10,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "start:dev": "cd client && npm start",
     "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "proxy": "http://localhost:8000",
