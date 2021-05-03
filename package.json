@@ -2,10 +2,16 @@
   "name": "nodereact",
   "version": "1.0.0",
   "description": "",
+  "private":true,
   "main": "server.js",
+  "engines":{
+  	"npm":"7.0.8",
+  	"node":"15.2.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "heroku-postbuild": "npm install"
   },
   "author": "Reecha Khanal",
   "license": "ISC",
