@@ -2,16 +2,16 @@
   "name": "nodereact",
   "version": "1.0.0",
   "description": "",
-  "private":true,
+  "private": true,
   "main": "server.js",
-  "engines":{
-  	"npm":"7.0.8",
-  	"node":"15.2.0"
+  "engines": {
+    "npm": "7.0.8",
+    "node": "15.2.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "start:dev":"react-scripts start",
+    "start:dev": "react-scripts start",
     "heroku-postbuild": "cd client && npm install && npm run build",
     "client": "cd client && npm start"
   },
