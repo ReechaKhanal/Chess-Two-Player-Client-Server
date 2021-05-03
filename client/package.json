@@ -19,7 +19,6 @@
     "eject": "react-scripts eject"
   },
   "proxy": "http://localhost:8000",
-  "homepage": "https://chess-two-player.herokuapp.com/",
   "eslintConfig": {
     "extends": "react-app"
   },

@@ -12,7 +12,12 @@ import { getAllLegalMoves } from "./legalMoves/getLegalMoves";
 import { w3cwebsocket as W3CWebSocket } from "websocket";
 import Identicon from 'react-identicons';
 
-const client = new W3CWebSocket('ws://127.0.0.1:8000');
+
+
+
+const webSocketsServerPort = process.env.PORT || 8000;
+//const client = new W3CWebSocket('ws://127.0.0.1:8000');
+const client = new W3CWebSocket('ws://127.0.0.1:'+webSocketsServerPort);
 
 class ChessBoard extends Component{
 
