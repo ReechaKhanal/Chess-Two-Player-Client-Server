@@ -4,9 +4,9 @@
   "private": true,
   "dependencies": {
     "medium-editor": "^5.23.3",
-    "react": "^16.8.6",
+    "react": "16.14.0",
     "react-dom": "^16.8.6",
-    "react-identicons": "^1.1.7",
+    "react-identicons": "^17.0.1",
     "react-medium-editor": "^1.8.1",
     "react-scripts": "2.1.8",
     "reactstrap": "^8.0.0",
