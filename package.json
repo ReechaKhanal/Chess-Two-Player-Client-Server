@@ -1,33 +1,19 @@
 {
-  "name": "client-server",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "medium-editor": "^5.23.3",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-identicons": "^1.1.7",
-    "react-medium-editor": "^1.8.1",
-    "react-scripts": "2.1.8",
-    "reactstrap": "^8.0.0",
-    "websocket": "^1.0.28"
-  },
+  "name": "nodereact",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
   "scripts": {
-    "start-client": "cd client ",
-    "start":"cd server"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "client": "cd client && npm start"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "devDependencies": {
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-config-prettier": "^4.1.0",
-    "prettier": "^1.17.0"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  "author": "Reecha Khanal",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "http": "0.0.0",
+    "socket.io": "^2.2.0",
+    "websocket": "^1.0.28"
+  }
 }
