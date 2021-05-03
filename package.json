@@ -10,7 +10,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "start:dev": "cd client && react-scripts start",
+    "start:dev": "cd client && npm start",
     "heroku-postbuild": "cd client && npm start",
     "client": "cd client && npm start",
     "proxy": "ws://127.0.0.1:8000"
