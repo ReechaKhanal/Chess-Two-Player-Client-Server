@@ -9,14 +9,15 @@ import { getImageType } from "./Images/getImageType.js"
 import { getKingRowCol } from "./lookForCheck";
 import { getBoardFromStateBoard } from "./getStateBoard";
 import { getAllLegalMoves } from "./legalMoves/getLegalMoves";
-import { w3cwebsocket as W3CWebSocket } from "websocket";
+//import { w3cwebsocket as W3CWebSocket } from "websocket";
 import Identicon from 'react-identicons';
 
-const webSocketsServerPort = process.env.PORT || 8000;
+
 //const client = new W3CWebSocket('ws://127.0.0.1:8000');
-//const client = new W3CWebSocket('ws://127.0.0.1:'+webSocketsServerPort);
-//const url = "https://chess-two-player.herokuapp.com/";
-const client = new W3CWebSocket('https://chess-two-player.herokuapp.com');
+//const client = new W3CWebSocket('https://chess-two-player.herokuapp.com');
+
+const W3CWebSocket = require('websocket').w3cwebsocket;
+const client = new W3CWebSocket('https://chess-two-player.herokuapp.com', 'echo-protocol');
 
 class ChessBoard extends Component{
     /*
