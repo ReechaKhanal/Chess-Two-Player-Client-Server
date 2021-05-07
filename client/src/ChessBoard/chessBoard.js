@@ -15,11 +15,10 @@ import Identicon from 'react-identicons';
 const webSocketsServerPort = process.env.PORT || 8000;
 //const client = new W3CWebSocket('ws://127.0.0.1:8000');
 //const client = new W3CWebSocket('ws://127.0.0.1:'+webSocketsServerPort);
-const url = "https://chess-two-player.herokuapp.com/";
-const client = new W3CWebSocket(url);
+//const url = "https://chess-two-player.herokuapp.com/";
+const client = new W3CWebSocket('https://chess-two-player.herokuapp.com');
 
 class ChessBoard extends Component{
-
     /*
     * Whenever user logs in - we will take him/her to a completely new game
     * We will create a room for her and "text" reecha that someone is waiting to for you in the room. 
