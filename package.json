@@ -17,9 +17,14 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server": "cd server && node server.js"
+    "server": "cd server && node server.js", 
+    "devServer": {
+    	"compress": true,
+    	"disableHostCheck": true,   // That solved it,
+    	"port":8000
+ 	}     
   },
-  "proxy": "http://localhost:8000",
+  "proxy": "https://chess-two-player.herokuapp.com/",
   "eslintConfig": {
     "extends": "react-app"
   },
