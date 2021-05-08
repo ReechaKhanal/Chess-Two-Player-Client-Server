@@ -1,28 +1,37 @@
 {
-  "name": "server",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "engines": {
-    "npm": "7.0.8",
-    "node": "15.2.0"
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "medium-editor": "^5.23.3",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-identicons": "^1.1.7",
+    "react-medium-editor": "^1.8.1",
+    "react-scripts": "2.1.8",
+    "reactstrap": "^8.0.0",
+    "websocket": "^1.0.28"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "react" : "cd client && npm start",
-    "server": "node server.js",
-    "dev":"concurrently 'npm run react' 'npm run server'",
-    "heroku-postbuild": "cd client && npm install && npm run build"
+    "start-client": "react-scripts start",
+    "build": "react-scripts build && (cd server && node install)",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "start": "cd server && node server.js"
   },
   "proxy": "http://localhost:8000",
-  "author": "Reecha Khanal",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.16.4",
-    "http": "0.0.0",
-    "npm": "^6.14.9",
-    "socket.io": "^2.2.0",
-    "websocket": "^1.0.28"
-  }
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^4.1.0",
+    "prettier": "^1.17.0"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
