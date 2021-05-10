@@ -22,7 +22,6 @@
   	"compress": true,
     "disableHostCheck": true
   },     
-  "proxy": "https://chess-two-player.herokuapp.com/",
   "eslintConfig": {
     "extends": "react-app"
   },
