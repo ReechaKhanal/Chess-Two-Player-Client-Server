@@ -20,8 +20,11 @@
   },
   "homepage": "https://github.com/ReechaKhanal/Chess-Two-Player-Client-Server#readme",
   "dependencies": {
+    "bufferutil": "^4.0.3",
     "express": "^4.17.1",
-    "websocket": "^1.0.34"
+    "utf-8-validate": "^5.0.5",
+    "websocket": "^1.0.34",
+    "ws": "^7.4.5"
   },
   "engines": {
     "node": "15.2.0"
