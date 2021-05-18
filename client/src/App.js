@@ -8,7 +8,7 @@ import React, { Component } from 'react';
 import { w3cwebsocket as W3CWebSocket } from "websocket";
 
 //const client = new W3CWebSocket('ws://127.0.0.1:8000');
-const client = new W3CWebSocket('https://chess-two-player.herokuapp.com/');
+const client = new W3CWebSocket('ws://chess-two-player.herokuapp.com/');
 
 class App extends Component {
   componentWillMount() {
