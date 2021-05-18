@@ -1,23 +1,26 @@
 {
-  "name": "server",
+  "name": "chess-two-player-client-server",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
-  "engines": {
-    "npm": "7.0.8",
-    "node": "15.2.0"
-  },
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js && cd client && npm start"
+    "start": "node server/index.js",
+    "build": "cd client && npm install && npm run build"
   },
-  "author": "Reecha Khanal",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ReechaKhanal/Chess-Two-Player-Client-Server.git"
+  },
+  "keywords": [],
+  "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ReechaKhanal/Chess-Two-Player-Client-Server/issues"
+  },
+  "homepage": "https://github.com/ReechaKhanal/Chess-Two-Player-Client-Server#readme",
   "dependencies": {
-    "express": "^4.16.4",
-    "http": "0.0.0",
-    "npm": "^6.14.9",
-    "socket.io": "^2.2.0",
-    "websocket": "^1.0.28"
-  }
+    "express": "^4.17.1"
+  },
+  "engines": {"node": "15.2.0"}
 }
