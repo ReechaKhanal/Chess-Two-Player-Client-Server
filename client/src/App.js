@@ -1,24 +1,24 @@
-/* eslint-disable */ 
-import React from 'react';
+import React from "react";
+import logo from './logo.svg';
+import './App.css';
 import ReactDOM from 'react-dom';
 import ChessBoard from "./ChessBoard/chessBoard";
-import * as serviceWorker from './serviceWorker';
 
-/*
-ReactDOM.render(
-    <App />, document.getElementById('root')
-);
-*/
+function App() {
+  const [data, setData] = React.useState(null);
 
-ReactDOM.render(
+  React.useEffect(() => {
+    fetch("/api")
+      .then((res) => res.json())
+      .then((data) => setData(data.message));
+  }, []);
+
+  return (
     <div class = "chess">
       <h1>Reecha's Chess Board</h1>
       <ChessBoard/>
-    </div>,
-    document.getElementById('root')
+    </div>
   );
+}
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+export default App;
