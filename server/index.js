@@ -1,11 +1,6 @@
-const path = require('path');
-const express = require('express');
-
 const webSocketsServerPort = process.env.PORT || 8000;
 const webSocketServer = require('websocket').server;
 const http = require('http');
-
-const app = express();
 
 // Spinning the http server and the websocket server
 const server = http.createServer();
@@ -147,22 +142,3 @@ wsServer.on('request', function(request) {
       }
   });
 });
-
-/*
-// Have Node serve the files for our built React app
-app.use(express.static(path.resolve(__dirname, '../client/build')));
-
-// Handle GET requests to /api route
-app.get("/api", (req, res) => {
-  res.json({ message: "Hello from server!" });
-});
-
-// All other GET requests not handled before will return our React app
-app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, '../client/build', 'index.html'));
-});
-
-app.listen(webSocketsServerPort, () => {
-  console.log(`Server listening on ${webSocketsServerPort}`);
-});
-*/
