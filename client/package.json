@@ -6,15 +6,15 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
-    "bufferutil": "^4.0.3",
+    "query-string": "^4.3.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-identicons": "^1.2.5",
+    "react-emoji": "^0.5.0",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
-    "utf-8-validate": "^5.0.5",
-    "web-vitals": "^1.0.1",
-    "websocket": "^1.0.34",
-    "ws": "^6.2.1"
+    "socket.io-client": "^4.1.2",
+    "web-vitals": "^1.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -22,7 +22,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "proxy": "ws://chess-two-player.herokuapp.com/",
   "eslintConfig": {
     "extends": [
       "react-app",
